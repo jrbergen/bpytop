@@ -6,15 +6,15 @@ from bpytop import errlog
 
 
 def get_system_string() -> str:
-	"""Retrieves internal name for OS/platform using sys.platfrom"""
-	if "linux" in sys.platform:
-		return "Linux"
-	elif "bsd" in sys.platform:
-		return "BSD"
-	elif "darwin" in sys.platform:
-		return "MacOS"
-	else:
-		return "Other"
+    """Retrieves internal name for OS/platform using sys.platfrom"""
+    if "linux" in sys.platform:
+        return "Linux"
+    elif "bsd" in sys.platform:
+        return "BSD"
+    elif "darwin" in sys.platform:
+        return "MacOS"
+    else:
+        return "Other"
 
 
 class TimeIt:
